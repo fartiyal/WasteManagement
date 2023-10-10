@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management</title>
+    <link rel="stylesheet" href="{% static 'Core/Css/style.css'%}">
+</head>
+<body>
+    <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+</header>
+
+
+<section id="home" class="hero">
+
+          <h1>Welcome to Waste Management Solutions</h1>
+          <br />
+          <p>
+            TURNING TRASH INTO TREASURE, ONE CHOICE AT A TIME
+          </p>
+          <br />
+          <p>Your partner in sustainable waste disposal</p>
+          <br  />
+
+          <a href="#services" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="services" class="services">
+      <div class="news">
+
+        <h2>Latest News</h2>
+        <ul>
+          <li><a href="https://economictimes.indiatimes.com/news/india/kerala-government-launches-rs-2400-cr-solid-waste-management-project/articleshow/102874265.cm">Kerala government launches Rs 2,400 cr solid waste management project<br /></a></li>
+        <li>
+          <a href="https://www.ndtv.com/kerala-news/world-bank-offered-help-in-waste-management-in-kerala-pinarayi-vijayan-3881185">World Bank Offered Help In Waste Management In Kerala": Pinarayi Vijayan<br /></a>
+        </li>
+        <li>
+        <a href="https://economictimes.indiatimes.com/industry/energy/india-can-generate-65-gw-energy-annually-from-waste-say-experts/articleshow/102808694.cms">India can generate 65 GW energy annually from waste, say experts<br /></a>
+      </li>
+    <li>
+      <a href="https://economictimes.indiatimes.com/news/india/ghaziabad-municipality-stops-garbage-collection-in-14000-flats-across-29-societies-is-your-locality-affected/articleshow/103433553.cms">Ghaziabad municipality stops garbage collection in 14,000 flats across 29 Societies. Is your locality affected?<br /></a>
+    </li>
+    <li>
+      <a href="https://timesofindia.indiatimes.com/city/patna/govt-plans-to-set-up-integrated-solid-waste-mgmt-plant-in-city/articleshow/103374681.cms">Govt plans to set up integrated solid waste mgmt plant in city<br /></a>
+    </li>
+    <li>
+<a href="https://timesofindia.indiatimes.com/city/chennai/chennai-corporation-holds-solid-waste-management-awareness-training-programme-for-school-students/articleshow/102322506.cms">Chennai Corporation holds solid waste management awareness training programme for school students</a>
+    </li>
+  </ul>
+      </div>
+      <div class="govt">
+        <img src='{%static "Core/images/modi.jpeg"%}'alt="Swaccha Bharat Mission" >
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <img src='{%static "Core/images/work.jpeg"%}' alt="Workers" />
+      </div>
+        <p>
+          "Let us strive to make our country clean and green"<br />
+          -PM Narendra Modi
+          <br />
+        </p>
+       <img src='{%static "Core/images/minister.jpeg"%}'alt="govt. program" >
+
+        <h2>Our Services</h2>
+        <div class="module-card">
+            <h3>Know your garbage</h3>
+            <p>Classify Today, Thrive Tomorrow: Your Waste Matters..</p>
+        </div>
+        <a href="{%url 'knowworkersubmodule'%}">
+        <div class="module-card">
+         
+            <h3>Workers around you</h3>
+            <p>Guardians of Health and Well-being..</p>
+        </div>
+      </a>
+        <div class="module-card">
+            <h3>Awareness campaign</h3>
+            <p>Cleanliness in Every Corner: Together, We Can Make it Happen..</p>
+        </div>
+        <div class="module-card">
+            <h3>Waste treatment</h3>
+            <p> Where Sustainability Meets Innovation..</p>
+        </div>
+        <div class="module-card">
+            <h3>Governmemt schemes</h3>
+            <p>From Policy to Practice.</p>
+        </div>
+        <div class="module-card">
+            <h3>Complaints and suggestions</h3>
+            <p>Your Voice, Our Path to Excellence.</p>
+        </div>
+        <div class="module-card">
+            <h3>Consulting Services</h3>
+            <p> Your Partner in Progress and Prosperity..</p>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing sustainable waste management solutions to protect our environment.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need our services, please contact us:</p>
+        <address>
+            Email: <a href="mailto:bchetna185@gmail.com">bchetna185@gmail.com</a><br>
+            Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </address>
+    </section>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<section class="colored-section" id="cta">
+    <div class="container">
+     <center>
+
+    <!-- App Store button -->
+    <a href="" target="_blank" class="market-btn apple-btn" role="button">
+      <span class="market-button-subtitle">Download on the</span>
+      <span class="market-button-title">App Store</span>
+    </a>
+
+    <!-- Google Play button -->
+    <a href="" target="_blank" class="market-btn google-btn" role="button">
+      <span class="market-button-subtitle">Download on the</span>
+      <span class="market-button-title">Google Play</span>
+    </a>
+
+    <!-- Windows store button -->
+    <a href="" target="_blank" class="market-btn windows-btn" role="button">
+      <span class="market-button-subtitle">Download on the</span>
+      <span class="market-button-title">Windows Store</span>
+    </a>
+
+
+      </center>
+    </div>
+  </section>
+
+
+    <footer class="white-section" id="footer">
+  <div class="container-fluid">
+    <a href="https://www.twitter.com"><i class="social-icon fab fa-twitter-square 8x"></i></a>
+    <a href="https://www.facebook.com"><i class="social-icon fab fa-facebook-square 8x"></i></a>
+    <a href="https://www.instagram.com"><i class="social-icon fab fa-instagram 8x"></i></a>
+    <a href="mailto:bchetna185@gmail.com"><i class="social-icon fas fa-envelope 8x"></i></a>
+    <p class="copyright">© Copyright 2023 Waste Management</p>
+  </div>
+</footer>
+</body>
+</html>

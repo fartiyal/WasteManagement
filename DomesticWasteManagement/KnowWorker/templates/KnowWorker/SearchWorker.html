@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchWorkers</title>
+    <link rel="stylesheet" href="{%static 'knowWorker/Css/search_worker.css'%}">
+</head>
+<body>
+    
+    <h1>WORKERS AROUND YOU</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">search</button>
+        
+    </form>
+    {% if workersData %}
+      <table>
+        <tr>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Mobile Number</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+      {% for worker in workersData %}
+    <tr>
+        <td>{{worker.First_Name}}</td>
+        <td>{{worker.Middle_Name}}</td>
+        <td>{{worker.Last_Name}}</td>
+        <td>{{worker.Mobile_Number}}</td>
+        <td>{{worker.Gender}}</td>
+        <td>{{worker.Age}}</td>
+        <td>{{worker.Address}}</td>
+    </tr>
+        {% endfor %}
+    </table>
+    {%else%}
+         {{error}}
+    {% endif %}
+</body>
+</html>

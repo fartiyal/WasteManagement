@@ -1,0 +1,111 @@
+
+        /* Global styles */
+        body {
+            font-family: "Montserrat";
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        /* Navigation styles */
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+
+          }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .search-bar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-bar select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    /*  .module-card {
+         background-color: #4CAF50;
+         color: white;
+         padding: 20px;
+         border-radius: 5px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         margin: 20px 0;
+         width:38%
+     } */
+     .module-card {
+       border: 3px solid #ccc;
+           background-color: #088F8F;
+           color: white;
+           padding: 27px;
+           margin: 22px;
+           width: 359px;
+           float: left;
+      }
+      div#map-container-google-1 {
+    margin: 6%;
+}
+.card-body.closed.px-0 {
+    margin-left: 7%;
+}

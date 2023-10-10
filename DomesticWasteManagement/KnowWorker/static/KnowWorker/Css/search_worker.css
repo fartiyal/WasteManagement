@@ -1,0 +1,72 @@
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, form, table {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color:greenyellow;
+}
+
+/* Set background color and text color for the body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Style the header (h1) */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the form */
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the label and input fields */
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 150px;
+}
+
+/* Style the button */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add some spacing between elements */
+p {
+    margin: 10px 0;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style table headers (th) */
+th {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table rows (td) */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'knowWorker/Css/knowWorkerSubmodule.css'%}">
+
+    <title>WorkersAroundYou</title>
+
+</head>
+<body>
+    <div class="navbar">
+        <h1><center>
+          Workers Around You
+        </center></h1>
+        <nav>
+            <ul>
+                <li><a href='{%url "Home"%}'>Home</a></li>
+                <li><a href="{%url 'registerworker'%}">Register Worker</a></li>
+                <li><a href="{%url 'searchworker'%}">Search Worker</a></li>
+                <li><a href="#con">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form action="" method="post">
+      {% csrf_token %}
+    <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <select>
+        <option value="option1">All</option>
+        <option value="option2">Near by you</option>
+        <option value="option3">By PIN</option>
+    </select>
+    <button>Search</button>
+</div></form>
+
+          <div class="container">
+            <div class="row row-cols-2">
+             <a href="{%url 'registerworker'%}"> <div class="col" id="col"><div class="module-card">
+                  <h2>Register Worker</h2>
+                  <p>From waste to workforce: Register Today.</p>
+              </div></a></div>
+              <div class="col"><div class="module-card">
+                  <h2>Sewer Worker</h2>
+                  <p>Building the foundation of cleaner communities.</p>
+              </div></div>
+              <a href="{%url 'searchworker'%}"> <div class="col"><div class="module-card">
+                  <h2>Search Garbage Collecting Worker</h2>
+                  <p>Committed to a cleaner tomorrow.</p>
+              </div></a></div>
+              <div class="col"><div class="module-card">
+                  <h2>Workers Guidelines</h2>
+                  <p>Guiding the cleanup crew for greener future.</p>
+              </div></div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+<!-- <div id="map"></div> -->
+
+  <!--
+     <script>
+        // JavaScript for embedding a live map (you'll need an API key for this)
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    -->
+    <div class="container">
+    <section class="mx-auto my-5" style="max-width: 23rem;">
+
+      <div class="card map-card">
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+        
+           
+        </div>
+        <div class="card-body closed px-0">
+          <div class="button px-2 mt-3">
+            <a class="btn btn-floating btn-lg living-coral text-white float-end"
+              style="margin-right: .75rem;"><i class="fas fa-bicycle"></i></a>
+          </div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+
+</body>
+</html>
